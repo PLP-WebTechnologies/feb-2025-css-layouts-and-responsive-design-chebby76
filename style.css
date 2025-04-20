@@ -1,0 +1,206 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: rgb(12, 12, 12);
+}
+
+.navbar a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('delivery.jpg') no-repeat center center/cover;
+    color: rgb(8, 8, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #555;
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    background-color: #eef2f3;
+}
+
+.about-features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.feature-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Services Section */
+.services {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Tracking Section */
+.tracking {
+    padding: 20px;
+    background-color: #eef2f3;
+    text-align: center;
+}
+
+.tracking form {
+    margin-top: 10px;
+}
+
+.tracking input {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tracking button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.tracking button:hover {
+    background-color: #555;
+}
+
+/* Contact Section */
+.contact {
+    padding: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin: 10px 0 5px;
+}
+
+.contact input, 
+.contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .about-features {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+
+    .tracking input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
